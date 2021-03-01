@@ -1,9 +1,9 @@
 # Дано натуральное число n. Вычислить:
 # сумму k в степени k
 
-n = 4
+n = 3
 k = 0
 
-for i in range(n):
-    k += pow(i,i)
+for i in range(1,n+1):
+    k += i**i
 print(k)
