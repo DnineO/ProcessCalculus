@@ -1,15 +1,13 @@
+import firstModule
 import numpy as np
 # 677б
 
 n = 3
-a = np.ones((n, n))
-b = np.zeros((n, n))
-print(b)
 
-for i in range(n):
-    for j in range(n):
-        tmp = 0
-        for k in range(i + 1):
-            b[i, j] += np.sum(a[k][j])
+# for i in range(len(b) - 1, -1, -1):
+#     for j in range(len(b) - 1, -1, -1):
+#         for k in range(i, -1, -1):
+#             for m in range(j, -1, -1):
+#                 b[i, j] += (a[k][m])
 
-print(b)
+firstModule.lab8(n)

@@ -1,9 +1,7 @@
+import firstModule
 # Дано натуральное число n. Вычислить:
 # сумму k в степени k
 
-n = 3
-k = 0
+n = 4
 
-for i in range(1,n+1):
-    k += i**i
-print(k)
+firstModule.lab7(n)

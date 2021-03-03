@@ -1,14 +1,10 @@
-import random
+import firstModule
 #Задание 136 к)
 
 n = 10
 a = []
-summ = 0
 
-for i in range(n):
-    a.append(random.randint(-10,10))
-    print(a[i])
-    summ += a[i]
+summ = firstModule.lab5(a, n)
 
-print("Summ = ",summ)
-print("Result = ",2 * summ**2)
+print("Summ = ", summ)
+print("Result = ", 2 * summ**2)
