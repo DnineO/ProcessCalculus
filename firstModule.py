@@ -49,14 +49,12 @@ def lab8(n):
     b = np.zeros((n, n))
     print(a)
     print(b)
-
     for i in range(n):
         for j in range(n):
-            ii = i - 1
-            while (ii >= 0):
-                jj = j + 1
-                while (jj < n):
-                    b[i][j] = b[i][j] + a[ii][jj]
-                    jj += 1
-                ii -= 1
+            summ = 0
+            for k in range(n - i - 1, n):
+                for l in range(n - j - 1,n):
+                    summ += a[k][l]
+            b[i][j] = summ
     print(b)
+    
