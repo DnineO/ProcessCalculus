@@ -12,7 +12,7 @@ print(arr)
 M1 = np.array([[2., 5.], [1., -10.]])  # Матрица (левая часть системы)
 v1 = np.array([1., 3.])  # Вектор (правая часть системы)
 
-print(np.linalg.solve(M1, v1))
+print(np.linalg.solve(M1, v1))  # Ответом будет [1 -0.2]
 
 # Построим тепловую карту на основе случайной матрицы
 seaborn.heatmap(arr, annot=True, cmap='coolwarm')

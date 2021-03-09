@@ -57,4 +57,3 @@ def lab8(n):
                     summ += a[k][l]
             b[i][j] = summ
     print(b)
-    
