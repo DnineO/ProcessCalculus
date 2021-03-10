@@ -19,13 +19,13 @@ seaborn.heatmap(arr, annot=True, cmap='coolwarm')
 plt.show()
 
 # Построим график с шумом
-noise = np.random.normal(0,1,10)
-X = np.linspace(1, 10, 10)
+noise = np.random.normal(0,0.5,100)
+X = np.linspace(1, 100, 100)
 Y = np.sin(X)
 
 # print(X,Y,noise)
 
-for i in range(len(arr)):
+for i in range(len(X)):
     X[i] += noise[i]
 
 plt.plot(X, Y)
