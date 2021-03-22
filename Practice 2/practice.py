@@ -18,6 +18,9 @@ print(np.linalg.solve(M1, v1))  # Ответом будет [1 -0.2]
 seaborn.heatmap(arr, annot=True, cmap='coolwarm')
 plt.show()
 
+seaborn.histplot(arr, x = None)
+plt.show()
+
 # Построим график с шумом
 noise = np.random.normal(0,0.5,100)
 X = np.linspace(1, 100, 100)
