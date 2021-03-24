@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn
+import seaborn as sns
 
 # Создаем матрицу заполненную случайными значениями
 arr = np.array(np.random.randint(1,10,(5,5)))
@@ -15,10 +15,14 @@ v1 = np.array([1., 3.])  # Вектор (правая часть системы)
 print(np.linalg.solve(M1, v1))  # Ответом будет [1 -0.2]
 
 # Построим тепловую карту на основе случайной матрицы
-seaborn.heatmap(arr, annot=True, cmap='coolwarm')
+sns.heatmap(arr, annot=True, cmap='coolwarm')
 plt.show()
 
-seaborn.histplot(arr, x = None)
+# Построим гистограмму на основе случайной матрицы
+# sns.histplot(arr, x = None)
+sns.set(color_codes=True)
+sns.set(style="white", palette="muted")
+sns.histplot(arr)
 plt.show()
 
 # Построим график с шумом
